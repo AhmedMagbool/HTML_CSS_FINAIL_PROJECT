@@ -23,7 +23,7 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
-    margin-right: 60px;
+    margin-right: 70px;
     margin-top: 15px;
     font-size: 20px;
 }
@@ -34,9 +34,8 @@ nav a:hover{
 .logo1{
     width: 60px ;
     height: 60px;
-    margin-right: 5PX;
 }
-#button2 {
+#Button2 {
     outline: none;
     cursor: pointer;
     border: none;
@@ -55,18 +54,18 @@ nav a:hover{
     color: ghostwhite;
    }
    
-   #button2 span {
+   #Button2 span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
    }
    
-   #button2:hover span {
+   #Button2:hover span {
     color: black;
    }
    
-   #button2::before,
-   #button2::after {
+   #Button2::before,
+   #Button2::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +74,7 @@ nav a:hover{
     z-index: 0;
    }
    
-   #button2::before {
+   #Button2::before {
     content: "";
     background: #848482;
     width: 120%;
@@ -84,11 +83,11 @@ nav a:hover{
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
    }
    
-   #button2:hover::before {
+   #Button2:hover::before {
     transform: translate3d(100%, 0, 0);
    }
 
-#button1 {
+#Button1 {
     outline: none;
     cursor: pointer;
     border: none;
@@ -108,18 +107,18 @@ nav a:hover{
     margin-left: 30px;
    }
 
-   #button1 span {
+   #Button1 span {
     position: relative;
     z-index: 10;
     transition: color 0.4s;
    }
 
-   #button1:hover span {
+   #Button1:hover span {
     color: black;
    }
    
-   #button1::before,
-   #button1::after {
+   #Button1::before,
+   #Button1::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -128,7 +127,7 @@ nav a:hover{
     z-index: 0;
    }
    
-   #button1::before {
+   #Button1::before {
     content: "";
     background: #848482;
     width: 120%;
@@ -137,27 +136,83 @@ nav a:hover{
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
    }
    
-   #button1:hover::before {
+   #Button1:hover::before {
     transform: translate3d(100%, 0, 0);
    }
-
-.AboutUs_text{
-    border: 2px ;
-    width: 40vw;
-}
-.AboutUs_text h1{
-    font-size: 40px;
-}
-
+/*  */
 main{
     display: flex;
-    justify-content: right;
-    margin-right: 2vw;
-    margin-top: 2vh;
-    font-size: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-img{
-    margin-right: 20vw;
-    width: 650px;
-    height: 600px;
-}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(260px);
+    padding: 20px 1px;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+    border-radius: 10px;
+    background-color: #6B6ECC;
+    background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content .price {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  }
+  
+  .content .description {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .content .title {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(255 255 255);
+    margin-top: 10px;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .content .prodect_img{
+    width: 200px;
+    height: 200px;
+  }
+  .card button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: none;
+    outline: none;
+    color: rgb(255 255 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .75rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(33 150 243);
+    border-radius: 0.5rem;
+    width: 90%;
+    text-shadow: 0px 4px 18px #2c3442;
+  }
+  .card button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: medium;
+  }
+  
+  
